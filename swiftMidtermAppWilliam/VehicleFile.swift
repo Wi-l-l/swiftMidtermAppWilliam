@@ -64,6 +64,6 @@ class Truck:Vehicle
     }
     
     override func calculateRentalCost(days: Int) -> Double {
-        return (dailyRate * days) + (loadCapacity * 20)
+        return (dailyRate * Double(days)) + (loadCapacity * 20)
     }
 }
